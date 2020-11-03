@@ -1,0 +1,88 @@
+<div class="jumbotron text-center">
+    <h1>Bé tập tính</h1>
+</div>
+
+<div class="container">
+    <form id="myForm" onsubmit="return calc()" method="POST" action="">
+        <div class="row col-sm-8">
+
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label for="num">Số thứ nhất </label>
+                </div>
+                <div class="col-sm-9 wrap">
+                    <input id="num1" name="num1" type="text" class="form-control" placeholder="Nhập số thứ nhất"
+                        onmouseover="inviteInput()" onmouseout="isNumber()" value="{{num1}}"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label for="num">Số thứ hai </label>
+                </div>
+                <div class="col-sm-9 wrap">
+                    <input id="num2" name="num2" type="text" class="form-control" placeholder="Nhập số thứ hai"
+                        onmouseover="inviteInput()" onmouseout="isNumber()" value="{{num2}}"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label for="num">Kết quả </label>
+                </div>
+                <div class="col-sm-9 wrap">
+                    <input id="result" type="text" class="form-control" value="{{result}}"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label for="num">Thông báo </label>
+                </div>
+                <div class="col-sm-9 wrap">
+                    <p id="error"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <button type="submit" id="cal-btn" class="btn btn-info">
+                        Tính
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row col-sm-2">
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label class="radio"><input type="radio" id="radio-plus" name="optradio" />Cộng</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label class="radio"><input type="radio" id="radio-multiply" name="optradio" />Nhân</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-sm-2">
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label class="radio"><input type="radio" id="radio-minus" name="optradio" />Trừ</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 wrap">
+                    <label class="radio"><input type="radio" id="radio-divide" name="optradio" />Chia</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div hidden>
+            <input type="text" id="operator-name" name="optName" value=""><br><br>
+        </div>
+    </form>
+</div>
