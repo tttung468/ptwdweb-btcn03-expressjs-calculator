@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 
 const app = express();
-const port = 3000;
+const port = process.env.Port || 3000;
 
 //public file
 app.use(express.static(path.join(__dirname, "public")));
